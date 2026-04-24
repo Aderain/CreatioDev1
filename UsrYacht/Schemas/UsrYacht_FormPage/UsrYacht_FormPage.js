@@ -60,6 +60,26 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
+				"name": "PushMe",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(PushMe_caption)#",
+					"color": "default",
+					"disabled": false,
+					"size": "large",
+					"iconPosition": "only-text",
+					"visible": true,
+					"clicked": {
+						"request": "usr.PushButtonRequest"
+					},
+					"clickMode": "default"
+				},
+				"parentName": "ActionButtonsContainer",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "UsrName",
 				"values": {
 					"layoutConfig": {
@@ -98,6 +118,29 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Input_jc1vf6z",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_UsrNumber_ipk2qg1",
+					"control": "$PDS_UsrNumber_ipk2qg1",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -196,7 +239,7 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_4oj1oth",
+				"name": "ComboBox_gsr8sy8",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -205,7 +248,7 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_UsrColumn13_0lp2wj4",
+					"label": "$Resources.Strings.PDS_UsrDriveType_29tzh5m",
 					"ariaLabel": "",
 					"isAddAllowed": true,
 					"showValueAsLink": true,
@@ -213,10 +256,7 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$PDS_UsrColumn13_0lp2wj4",
-					"visible": true,
-					"readonly": false,
-					"placeholder": ""
+					"control": "$PDS_UsrDriveType_29tzh5m"
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -224,55 +264,20 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_m662oc9",
+				"name": "addRecord_12r8dbe",
 				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 3,
-						"rowSpan": 1
-					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_UsrColumn14_o7c8uuu",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$PDS_UsrColumn14_o7c8uuu",
-					"visible": true,
-					"readonly": false,
-					"placeholder": ""
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_12r8dbe_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
 				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
-				"index": 5
-			},
-			{
-				"operation": "insert",
-				"name": "Input_3wj9ttf",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 4,
-						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_UsrColumn15_gw12yjw",
-					"control": "$PDS_UsrColumn15_gw12yjw",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": true,
-					"labelPosition": "auto",
-					"visible": true
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
-				"index": 6
+				"parentName": "ComboBox_gsr8sy8",
+				"propertyName": "listActions",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -281,7 +286,7 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
-						"row": 4,
+						"row": 3,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
@@ -301,7 +306,94 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_dsi2na1",
+				"values": {
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_UsrStatus_u6yd4st",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_UsrStatus_u6yd4st",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_0wfz0vy",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_0wfz0vy_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_dsi2na1",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Input_rro0f5f",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_UsrComment_r8jplne",
+					"control": "$PDS_UsrComment_r8jplne",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
 				"index": 7
+			},
+			{
+				"operation": "insert",
+				"name": "TicketPrice",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 5,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_UsrTicketPrice_4zhmzzm",
+					"control": "$PDS_UsrTicketPrice_4zhmzzm",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 8
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -354,47 +446,6 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							"path": "PDS.UsrPassengersCount"
 						}
 					},
-					"PDS_UsrColumn13_0lp2wj4": {
-						"modelConfig": {
-							"path": "PDS.UsrColumn13"
-						}
-					},
-					"PDS_UsrColumn13_0lp2wj4_List": {
-						"isCollection": true,
-						"modelConfig": {
-							"sortingConfig": {
-								"default": [
-									{
-										"columnName": "Name",
-										"direction": "asc"
-									}
-								]
-							}
-						}
-					},
-					"PDS_UsrColumn14_o7c8uuu": {
-						"modelConfig": {
-							"path": "PDS.UsrColumn14"
-						}
-					},
-					"PDS_UsrColumn14_o7c8uuu_List": {
-						"isCollection": true,
-						"modelConfig": {
-							"sortingConfig": {
-								"default": [
-									{
-										"columnName": "Name",
-										"direction": "asc"
-									}
-								]
-							}
-						}
-					},
-					"PDS_UsrColumn15_gw12yjw": {
-						"modelConfig": {
-							"path": "PDS.UsrColumn15"
-						}
-					},
 					"PDS_UsrManager_4be616b": {
 						"modelConfig": {
 							"path": "PDS.UsrManager"
@@ -411,6 +462,57 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 									}
 								]
 							}
+						}
+					},
+					"PDS_UsrDriveType_29tzh5m": {
+						"modelConfig": {
+							"path": "PDS.UsrDriveType"
+						}
+					},
+					"PDS_UsrDriveType_29tzh5m_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"PDS_UsrStatus_u6yd4st": {
+						"modelConfig": {
+							"path": "PDS.UsrStatus"
+						}
+					},
+					"PDS_UsrStatus_u6yd4st_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"PDS_UsrNumber_ipk2qg1": {
+						"modelConfig": {
+							"path": "PDS.UsrNumber"
+						}
+					},
+					"PDS_UsrComment_r8jplne": {
+						"modelConfig": {
+							"path": "PDS.UsrComment"
+						}
+					},
+					"PDS_UsrTicketPrice_4zhmzzm": {
+						"modelConfig": {
+							"path": "PDS.UsrTicketPrice"
 						}
 					}
 				}
@@ -451,7 +553,21 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
-		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
+		handlers: /**SCHEMA_HANDLERS*/[
+			{
+				request: "usr.PushButtonRequest",
+				/* Implementation of the custom query handler. */
+				handler: async (request, next) => {
+					console.log("Button works...");
+					Terrasoft.showInformation("My button was pressed.");
+					var price = await request.$context.PDS_UsrPrice_wzh88xk;
+					console.log("Price = " + price);
+					request.$context.PDS_UsrComment_r8jplne = "comment from JS code!";
+					/* Call the next handler if it exists and return its result. */
+					return next?.handle(request);
+				}
+			}
+		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
 	};
