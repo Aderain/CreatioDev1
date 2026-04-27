@@ -115,6 +115,62 @@
               }
             ],
             "BR3": "BusinessRule_e080b30"
+          },
+          {
+            "JI0": "Terrasoft.Core.BusinessRules.BusinessRule",
+            "UId": "591b583c-ba87-4fc6-4a3b-d8d420418026",
+            "BR1": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.BusinessRuleCase",
+                "UId": "27972a2f-fe0a-9d43-fc18-418032c6c9b8",
+                "BRC1": {
+                  "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleGroupCondition",
+                  "UId": "7b0e429e-6edc-21d3-c9ba-9f5f4352f05c",
+                  "BGC1": 1,
+                  "BGC2": [
+                    {
+                      "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleCondition",
+                      "UId": "663ed89a-7892-60d9-8f0b-10b82b6ba76b",
+                      "BCO1": {
+                        "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+                        "UId": "e1750ee6-d609-848b-90fa-320ad6579e48",
+                        "BRE1": "Float2",
+                        "BRE2": "AttributeValue",
+                        "BRX1": "PDS_UsrPrice_wzh88xk"
+                      },
+                      "BCO2": {
+                        "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleSysSettingExpression",
+                        "UId": "d11974e8-046a-1461-965d-222d87d5e4b4",
+                        "BRE1": "Float2",
+                        "BRE2": "SysSetting",
+                        "BSS1": "MinPriceToRequireYachtComment"
+                      },
+                      "BCO3": 7
+                    }
+                  ]
+                },
+                "BRC2": [
+                  {
+                    "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionRequiredElement",
+                    "UId": "3e443c46-4139-b2ba-4892-0c2b2a9350bf",
+                    "BRA4": "Input_rro0f5f"
+                  }
+                ]
+              }
+            ],
+            "BR2": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "f3cd5695-bf9e-0c63-0b37-8f37e16d3484",
+                "BRT2": 2
+              },
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "97b15081-4902-5222-2bd2-ec28a98cb531",
+                "BRT1": "PDS_UsrPrice_wzh88xk"
+              }
+            ],
+            "BR3": "BusinessRule_3380d7e"
           }
         ]
       }

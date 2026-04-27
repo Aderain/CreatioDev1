@@ -2,6 +2,7 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
+			<Item Name="AddonConfig.Rules.591b583c-ba87-4fc6-4a3b-d8d420418026.Caption" Value="Make elements required: Comment" />
 			<Item Name="AddonConfig.Rules.ea72db53-e411-8706-f01d-589c73cba440.Caption" Value="Hide elements: Ticket Price" />
 			<Item Name="AddonConfig.Rules.f8d926d4-7909-d859-2e15-a39e18f95426.Caption" Value="Hide elements: Price per day, USD" />
 			<Item Name="Caption" Value="Yacht form page (Business rules)" />

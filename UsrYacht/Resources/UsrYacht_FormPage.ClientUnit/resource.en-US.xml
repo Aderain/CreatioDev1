@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Yacht form page" />
+			<Item Name="LocalizableStrings.Button_743f53h_caption.Value" Value="Push me" />
 			<Item Name="LocalizableStrings.EmailInput_Manager_caption.Value" Value="Email address" />
 			<Item Name="LocalizableStrings.EmailInput_y28b4p8_label.Value" Value="Email address" />
 			<Item Name="LocalizableStrings.ExpansionPanel_85k1n9j_title.Value" Value="Yacht Rentals" />
@@ -11,10 +12,13 @@
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_y8lfs5f_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_qpr0k70_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_ggot7az_caption.Value" Value="Actions" />
-			<Item Name="LocalizableStrings.LengthCannotBeLess.Value" Value="Мин длина 10 м" />
-			<Item Name="LocalizableStrings.PriceCannotBeLess.Value" Value="Минимальная цена - 50 USD" />
-			<Item Name="LocalizableStrings.PushMe_caption.Value" Value="Push me" />
+			<Item Name="LocalizableStrings.LengthCannotBeLess.Value" Value="Мин длина 10 м, макс. длина - 10000" />
+			<Item Name="LocalizableStrings.MenuItem_Add3Rentals_caption.Value" Value="Add 3 rentals" />
+			<Item Name="LocalizableStrings.MenuItem_AvgTicketPrice_caption.Value" Value="AvgTicketPrice" />
+			<Item Name="LocalizableStrings.PriceCannotBeLess.Value" Value="Минимальная цена - 50 USD, максимальная цена - 500000 USD" />
+			<Item Name="LocalizableStrings.PushMe_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.YachtCategories_label.Value" Value="Categories" />
+			<Item Name="LocalizableStrings.YachtService_caption.Value" Value="Yacht Service" />
 			<Item Name="LocalizableStrings.addRecord_0wfz0vy_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_12r8dbe_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_cahs939_caption.Value" Value="Add new" />

@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "f7782017-74d5-44e5-8194-4ca305416e1d",
+    "Name": "UsrPage_bep9du2",
+    "ModifiedOnUtc": "\/Date(1777270829000)\/",
+    "Parent": {
+      "UId": "ecdcc8ff-272c-4957-9381-7d74ce17e140",
+      "Name": "BaseMiniPageTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "New modal page"
+  }
+}

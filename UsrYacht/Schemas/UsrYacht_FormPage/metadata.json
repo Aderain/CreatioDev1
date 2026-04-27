@@ -141,6 +141,34 @@
   "A4": "f300060f-bb48-4ed7-846c-35dac8d56a89",
   "A5": "c859a2b9-f4e2-4537-a008-ce90677e505c"
 }
++ MetaData.Schema.B2 {
+  "UId": "aedacb31-671f-b8af-3edf-a109b95e7c24",
+  "A2": "Button_743f53h_caption",
+  "A3": "f300060f-bb48-4ed7-846c-35dac8d56a89",
+  "A4": "f300060f-bb48-4ed7-846c-35dac8d56a89",
+  "A5": "f8d0d33d-3f8e-4f6b-becc-d9ebd8bfb5c6"
+}
++ MetaData.Schema.B2 {
+  "UId": "def2e52e-16bf-b7f2-6811-baacb50160f2",
+  "A2": "YachtService_caption",
+  "A3": "f300060f-bb48-4ed7-846c-35dac8d56a89",
+  "A4": "f300060f-bb48-4ed7-846c-35dac8d56a89",
+  "A5": "f8d0d33d-3f8e-4f6b-becc-d9ebd8bfb5c6"
+}
++ MetaData.Schema.B2 {
+  "UId": "19b85081-ede8-1da8-cca3-634625e43bbe",
+  "A2": "MenuItem_Add3Rentals_caption",
+  "A3": "f300060f-bb48-4ed7-846c-35dac8d56a89",
+  "A4": "f300060f-bb48-4ed7-846c-35dac8d56a89",
+  "A5": "f8d0d33d-3f8e-4f6b-becc-d9ebd8bfb5c6"
+}
++ MetaData.Schema.B2 {
+  "UId": "f7ff8613-a06c-a857-647e-f71cfc0feeb6",
+  "A2": "MenuItem_AvgTicketPrice_caption",
+  "A3": "f300060f-bb48-4ed7-846c-35dac8d56a89",
+  "A4": "f300060f-bb48-4ed7-846c-35dac8d56a89",
+  "A5": "f8d0d33d-3f8e-4f6b-becc-d9ebd8bfb5c6"
+}
 = MetaData.Schema.B2.["fd9e5bd2-19ad-68b5-1356-fe7b39d36f28"].A4 "f300060f-bb48-4ed7-846c-35dac8d56a89"
 = MetaData.Schema.B2.["a77180d7-a9d0-5c7d-a47b-74c0545a1774"].A4 "f300060f-bb48-4ed7-846c-35dac8d56a89"
 = MetaData.Schema.B2.["a53e6c9a-741a-21de-9293-9d87d6014595"].A4 "f300060f-bb48-4ed7-846c-35dac8d56a89"
@@ -175,6 +203,10 @@
   "2819b5e7-e973-8ae5-6c2b-595f05001be6",
   "26134da6-b2bb-ffd7-4b13-71861ccc40cd",
   "631bbe89-cf66-a459-40f0-fa67ff383d92",
+  "aedacb31-671f-b8af-3edf-a109b95e7c24",
+  "def2e52e-16bf-b7f2-6811-baacb50160f2",
+  "19b85081-ede8-1da8-cca3-634625e43bbe",
+  "f7ff8613-a06c-a857-647e-f71cfc0feeb6",
   "fd9e5bd2-19ad-68b5-1356-fe7b39d36f28",
   "a77180d7-a9d0-5c7d-a47b-74c0545a1774",
   "a53e6c9a-741a-21de-9293-9d87d6014595",

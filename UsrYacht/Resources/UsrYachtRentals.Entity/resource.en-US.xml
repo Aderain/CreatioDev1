@@ -7,7 +7,6 @@
 			<Item Name="Columns.UsrEndDate.Caption" Value="End Date" />
 			<Item Name="Columns.UsrParentYacht.Caption" Value="Parent Yacht" />
 			<Item Name="Columns.UsrStartDate.Caption" Value="Start Date" />
-			<Item Name="EventsProcessSchema.Caption" Value="Business process" />
 		</Items>
 	</Group>
 </Resources>
